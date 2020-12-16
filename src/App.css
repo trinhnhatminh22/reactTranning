@@ -1,69 +1,34 @@
-.App {
-  display: flex;
-  text-align: center;
-  justify-content: center;
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.showinfo {
+    display: block;
+    padding-right: 17px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form.showagain {
+    display: block;
+}
+.module.form-module .form.hideinfo {
+    display: none;
+}
+.modal.video-modal.fade.in {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5) ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slidey-overlay .slidey-progress {
+    animation: progressload 6s ease-in-out  infinite;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.TrafficLight {
-  display: flex;
-  flex-direction: row;
-}
-
-.TrafficLight .bulb {
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-  border-radius: 50%;
-  margin: 50px;
-  opacity: 0.2;
-}
-
-.TrafficLight .bulb.active {
-  opacity: 1;
-}
-
-.TrafficLight .bulb.red {
-  background-color: red;
-}
-
-.TrafficLight .bulb.green {
-  background-color: green;
-}
-
-.TrafficLight .bulb.yellow {
-  background-color: yellow;
+@keyframes progressload {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }
