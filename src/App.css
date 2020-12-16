@@ -1,0 +1,69 @@
+.App {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.TrafficLight {
+  display: flex;
+  flex-direction: row;
+}
+
+.TrafficLight .bulb {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 50px;
+  opacity: 0.2;
+}
+
+.TrafficLight .bulb.active {
+  opacity: 1;
+}
+
+.TrafficLight .bulb.red {
+  background-color: red;
+}
+
+.TrafficLight .bulb.green {
+  background-color: green;
+}
+
+.TrafficLight .bulb.yellow {
+  background-color: yellow;
+}
